@@ -3,23 +3,8 @@
   "outputDirectory": "build",
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://your-backend-url/api/:path*"
-    },
-    {
-      "source": "/:path*/?((?!\\.).)*(?:\\.[a-zA-Z0-9]+)?$",
+      "source": "/:path((?!static).*)",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/static/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }
