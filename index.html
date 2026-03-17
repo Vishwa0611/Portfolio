@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Vishwakarma | Software Developer & Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================
+         ANIMATED BACKGROUND
+         ============================================ -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- ============================================
+         CUSTOM CURSOR
+         ============================================ -->
+    <div class="cursor" data-cursor></div>
+    <div class="cursor-trail" data-trail="1"></div>
+    <div class="cursor-trail" data-trail="2"></div>
+    <div class="cursor-trail" data-trail="3"></div>
+    <div class="cursor-trail" data-trail="4"></div>
+    <div class="cursor-trail" data-trail="5"></div>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="logo">AV<span class="logo-dot">.</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="RESUME.pdf" download="Ayush_Vishwakarma_Resume" class="nav-resume-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-title">
+                    <span class="title-line">Ayush Vishwakarma</span>
+                </h1>
+                <h2 class="hero-subtitle">I build intelligent solutions with data.</h2>
+                <p class="hero-description">
+                    Computer Science graduate specializing in data analytics and software development. 
+                    Currently working as a Data Analyst at NIT Surat's Department of Tribal Technology. 
+                    I transform complex datasets into actionable insights and create data-driven applications 
+                    that solve real-world problems.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-resume">
+                    <a href="RESUME.pdf" download="Ayush_Vishwakarma_Resume" class="btn-resume">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-wrapper">
+                    <div class="profile-glow"></div>
+                    <div class="profile-border">
+                        <div class="profile-border-animate"></div>
+                    </div>
+                    <div class="profile-container">
+                        <img src="images/2203051050113.jpeg" alt="Ayush Vishwakarma" class="profile-img">
+                    </div>
+                    <div class="profile-decoration">
+                        <span class="deco-line deco-line-1"></span>
+                        <span class="deco-line deco-line-2"></span>
+                        <span class="deco-dot deco-dot-1"></span>
+                        <span class="deco-dot deco-dot-2"></span>
+                        <span class="deco-dot deco-dot-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Computer Science graduate from <span class="highlight">Parul University</span> 
+                        with a strong foundation in data analytics and software development. My journey in tech 
+                        started with curiosity about how data can drive meaningful change and inform critical decisions.
+                    </p>
+                    <p>
+                        Currently, I'm working as a <span class="highlight">Data Analyst at NIT Surat</span> in the 
+                        Department of Tribal Technology, where I analyze environmental data to track ecological changes 
+                        over the past year in tribal regions. This work helps inform sustainable development policies 
+                        and environmental conservation strategies.
+                    </p>
+                    <p>
+                        I specialize in transforming raw data into meaningful visualizations and building solutions 
+                        that bridge the gap between technical complexity and business value. From analyzing NYC taxi 
+                        patterns to creating enterprise sales dashboards and developing innovative web applications, 
+                        I focus on delivering insights that matter.
+                    </p>
+                    <p>Here are some technologies I've been working with:</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                        <li>Looker Studio</li>
+                        <li>MySQL</li>
+                        <li>Statistical Analysis</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <h3 class="stat-number" data-target="7">7</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💼</div>
+                        <h3 class="stat-number" data-target="2">2</h3>
+                        <p class="stat-label">Internships</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <h3 class="stat-number" data-target="2026">2026</h3>
+                        <p class="stat-label">Graduated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EXPERIENCE SECTION
+         ============================================ -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span> Where I've Worked
+            </h2>
+            <div class="experience-container">
+                <div class="experience-tabs">
+                    <button class="tab-button active" data-tab="nit">NIT Surat</button>
+                    <button class="tab-button" data-tab="excelerate">Excelerate</button>
+                    <button class="tab-button" data-tab="education">Education</button>
+                </div>
+                <div class="experience-content">
+                    <div class="tab-panel active" data-panel="nit">
+                        <h3>Data Analyst <span class="company">@ NIT Surat - Department of Tribal Technology</span></h3>
+                        <p class="experience-date">Current Position</p>
+                        <ul class="experience-list">
+                            <li>
+                                <span class="bullet">▹</span>
+                                Analyzing environmental data to track and quantify ecological changes in tribal regions 
+                                over the past year, providing critical insights for sustainable development planning
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Processing and visualizing large-scale environmental datasets including climate patterns, 
+                                vegetation cover, water resources, and land use changes using Python, SQL, and Tableau
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Developing comprehensive dashboards and reports that translate complex environmental 
+                                metrics into actionable insights for policymakers and tribal welfare departments
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Collaborating with research teams and tribal community representatives to ensure data 
+                                accuracy and cultural sensitivity in environmental impact assessments
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Implementing data validation frameworks and statistical analysis techniques to identify 
+                                trends in environmental degradation, resource availability, and climate impact on tribal ecosystems
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="excelerate">
+                        <h3>Data Analyst Associate Intern <span class="company">@ Excelerate</span></h3>
+                        <p class="experience-date">March 2025 - April 2025</p>
+                        <ul class="experience-list">
+                            <li>
+                                <span class="bullet">▹</span>
+                                Designed and built interactive dashboards in Looker Studio, providing real-time 
+                                learner insights that improved engagement tracking by enabling stakeholders to 
+                                identify trends at a glance
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Created comprehensive visualizations for KPIs, demographics, and engagement metrics, 
+                                transforming complex datasets into actionable business intelligence
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Implemented advanced filtering mechanisms that enhanced data clarity and user 
+                                experience, reducing report generation time and increasing dashboard adoption
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Collaborated with cross-functional teams to understand business requirements and 
+                                translate them into effective data visualization solutions
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" data-panel="education">
+                        <h3>B.Tech in Computer Science <span class="company">@ Parul University</span></h3>
+                        <p class="experience-date">2022 - 2026 | CGPA: 7.05/10</p>
+                        <ul class="experience-list">
+                            <li>
+                                <span class="bullet">▹</span>
+                                Focused on data structures, algorithms, database management systems, and 
+                                statistical analytics with strong emphasis on practical applications
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Completed comprehensive coursework in machine learning, data mining, business 
+                                intelligence, and software engineering principles
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Participated in various coding competitions and hackathons, developing problem-solving, 
+                                collaborative skills, and innovative thinking
+                            </li>
+                            <li>
+                                <span class="bullet">▹</span>
+                                Built multiple academic and personal projects focusing on data analysis, visualization 
+                                techniques, and full-stack development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+         ============================================ -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Things I've Built
+            </h2>
+            <div class="projects-grid">
+                
+                <!-- PROJECT 1: NYC Taxi Fare Analysis -->
+                <div class="project-card featured">
+                    <div class="project-image" data-tilt>
+                        <div class="project-image-inner">
+                            <div class="project-overlay"></div>
+                            <div class="project-image-shine"></div>
+                            <img src="images/nyc.png" alt="NYC Taxi Fare Analysis" class="project-img">
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                        </div>
+                        <div class="project-image-shadow"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">NYC Taxi Fare Analysis</h3>
+                        <div class="project-description">
+                            <p>
+                                Statistical analysis of NYC taxi fares to determine the relationship between payment methods 
+                                and fare amounts. Performed A/B testing and linear regression on 6 months of trip data, 
+                                discovering that card-paying customers generate 69¢ more per minute. Results show R² = 0.76, 
+                                proving strong correlation between trip duration and fare, with actionable recommendations 
+                                for revenue optimization.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Scikit-learn</li>
+                            <li>Statistical Testing</li>
+                            <li>Linear Regression</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Vishwa0611/NYC-taxi-fare-analysis" target="_blank" class="project-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: AtliQ Sales Dashboard -->
+                <div class="project-card featured reverse">
+                    <div class="project-image" data-tilt>
+                        <div class="project-image-inner">
+                            <div class="project-overlay"></div>
+                            <div class="project-image-shine"></div>
+                            <img src="images/Sales-Activity-Dashboard-Snapshot.png" alt="AtliQ Sales Dashboard" class="project-img">
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                        </div>
+                        <div class="project-image-shadow"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">AtliQ Sales Dashboard</h3>
+                        <div class="project-description">
+                            <p>
+                                Enterprise BI solution replacing Excel-based reporting for AtliQ Hardware's multi-regional 
+                                operations. Built MySQL-connected Tableau dashboard tracking revenue trends, top products, 
+                                and regional performance in real-time. Reduced report generation from hours to seconds, 
+                                enabling data-driven decision-making for Sales Director managing India-wide operations.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Tableau</li>
+                            <li>MySQL</li>
+                            <li>SQL</li>
+                            <li>Dashboard Design</li>
+                            <li>KPI Tracking</li>
+                            <li>ETL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Vishwa0611/AtliQ-Sales-Dashboard" target="_blank" class="project-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: COVID-19 India Analysis -->
+                <div class="project-card featured">
+                    <div class="project-image" data-tilt>
+                        <div class="project-image-inner">
+                            <div class="project-overlay"></div>
+                            <div class="project-image-shine"></div>
+                            <img src="images/Screenshot 2023-04-24 015435.png" alt="COVID-19 India Analysis" class="project-img">
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                            <span class="project-image-float"></span>
+                        </div>
+                        <div class="project-image-shadow"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">COVID-19 India Analysis</h3>
+                        <div class="project-description">
+                            <p>
+                                Comprehensive pandemic impact analysis across Indian states using Python and Tableau. 
+                                Performed EDA, correlation analysis, and ratio calculations on state-wise data. Created 
+                                interactive dashboards with scatter plots, mortality rates, and geographic visualizations 
+                                using Mapbox, revealing recovery patterns and state-wise health response effectiveness.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Tableau</li>
+                            <li>Pandas</li>
+                            <li>Statistical Analysis</li>
+                            <li>Mapbox</li>
+                            <li>EDA</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Vishwa0611/COVID-19-project" target="_blank" class="project-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OTHER PROJECTS -->
+                <div class="other-projects">
+                    <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+                    <div class="other-projects-grid">
+                        
+                        <!-- PROJECT 4: Food & Beverages Dashboard -->
+                        <div class="other-project-card">
+                            <div class="card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <a href="https://github.com/Vishwa0611/Food-Beverages-Sales-Analysis---Power-BI-Dashboard" target="_blank" class="project-link-small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                            <h4>Food & Beverages Sales Dashboard</h4>
+                            <p>Power BI dashboard analyzing F&B sales with revenue tracking, order trends, and performance metrics. Features interactive slicers, DAX measures, and tree maps for channel/manager/product analysis.</p>
+                            <ul class="project-tech-small">
+                                <li>Power BI</li>
+                                <li>DAX</li>
+                                <li>Excel</li>
+                            </ul>
+                        </div>
+
+                        <!-- PROJECT 5: CryptoSnap -->
+                        <div class="other-project-card">
+                            <div class="card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <div class="card-links">
+                                    <a href="https://github.com/Vishwa0611/CryptoSnap" target="_blank" class="project-link-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="https://crypto-snap-weld.vercel.app" target="_blank" class="project-link-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>CryptoSnap - Password Steganography</h4>
+                            <p>Flask web app generating secure passwords and embedding them in pixel art using LSB steganography. Features cryptographically secure generation, image extraction, and modern responsive UI.</p>
+                            <ul class="project-tech-small">
+                                <li>Flask</li>
+                                <li>Python</li>
+                                <li>Pillow</li>
+                                <li>Steganography</li>
+                            </ul>
+                        </div>
+
+                        <!-- PROJECT 6: Hotel Booking Analysis -->
+                        <div class="other-project-card">
+                            <div class="card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                                <a href="https://github.com/Vishwa0611/Hotel-Booking-Analysis" target="_blank" class="project-link-small">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                            <h4>Hotel Booking Cancellation Predictor</h4>
+                            <p>ML classification pipeline predicting booking cancellations from 119K records. Built Random Forest model with feature engineering, achieving interpretable results through feature importance analysis and business insights.</p>
+                            <ul class="project-tech-small">
+                                <li>Python</li>
+                                <li>Scikit-learn</li>
+                                <li>Random Forest</li>
+                            </ul>
+                        </div>
+
+                        <!-- PROJECT 7: Random Duty -->
+                        <div class="other-project-card">
+                            <div class="card-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                                <div class="card-links">
+                                    <a href="https://github.com/Vishwa0611/Random-Duty" target="_blank" class="project-link-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="https://random-duty.vercel.app" target="_blank" class="project-link-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h4>Random Duty - Gamified Task Manager</h4>
+                            <p>Interactive spinning wheel web app turning to-do lists into casino-style games. Features sound effects, vibration feedback, confetti celebrations, local storage, and fully responsive dark luxury theme.</p>
+                            <ul class="project-tech-small">
+                                <li>JavaScript</li>
+                                <li>CSS3</li>
+                                <li>HTML5</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Get In Touch
+            </h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-side">
+                    <div class="contact-intro">
+                        <h3>Let's Create Something <span class="highlight">Amazing</span> Together</h3>
+                        <p>
+                            I'm currently open to new opportunities and collaborations. 
+                            Whether you have a project in mind, a question, or just want to say hello — 
+                            my inbox is always open!
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:ayush6vishwakarma@gmail.com" class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span class="label">Email</span>
+                                <span class="value">ayush6vishwakarma@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+919430795350" class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span class="label">Phone</span>
+                                <span class="value">+91-9430795350</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span class="label">Location</span>
+                                <span class="value">Vadodara, Gujarat, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-card-side">
+                    <div class="contact-card">
+                        <div class="contact-card-glow"></div>
+                        <div class="contact-card-content">
+                            <div class="contact-card-header">
+                                <div class="status-indicator">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Available for hire</span>
+                                </div>
+                            </div>
+                            
+                            <h4>Ready to start a project?</h4>
+                            <p>Drop me a message and let's bring your ideas to life!</p>
+                            
+                            <a href="mailto:ayush6vishwakarma@gmail.com" class="btn btn-primary btn-contact">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </a>
+                            
+                            <a href="RESUME.pdf" download="Ayush_Vishwakarma_Resume" class="btn btn-resume-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                <span>Download Resume</span>
+                            </a>
+                            
+                            <div class="social-links-contact">
+                                <a href="https://linkedin.com/in/ayush-vishwakarma06" target="_blank" class="social-link-contact" aria-label="LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </a>
+                                <a href="https://github.com/Vishwa0611" target="_blank" class="social-link-contact" aria-label="GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <span class="highlight">Ayush Vishwakarma</span></p>
+            <p class="footer-year">&copy; 2025 — All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING RESUME BUTTON -->
+    <div class="floating-resume">
+        <a href="RESUME.pdf" download="Ayush_Vishwakarma_Resume" class="floating-resume-btn" aria-label="Download Resume">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
