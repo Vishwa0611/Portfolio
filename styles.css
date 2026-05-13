@@ -1577,3 +1577,34 @@ section {
     .project-tech, .project-tech-small { font-size: 11px; gap: 10px; }
     .profile-wrapper { max-width: 250px; }
 }
+/* ============================================
+   EXPERIENCE DOCUMENTS (NEW STYLES)
+   ============================================ */
+.experience-docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.doc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(220, 20, 60, 0.05);
+    border: 1px solid var(--accent-primary);
+    border-radius: 4px;
+    color: var(--accent-primary);
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.doc-btn:hover {
+    background: var(--accent-primary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px -5px var(--accent-glow);
+}
